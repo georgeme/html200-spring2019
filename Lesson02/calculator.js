@@ -13,7 +13,9 @@ console.log(w / x - y);
 console.log(w * (w / z) + y - x);
 console.log((v / y) * (x * z) + 15 % 2);
 console.log(39 + z / y * 5);
-
+console.log((72 / w) * 15);
+console.log((x % 10) * 15);
+console.log(v - w + z * y);
 
 
 
@@ -48,6 +50,19 @@ console.log(39 + z / y * 5);
 2 / 4 = .5
 .5 * 5 = 2.5
 39 + 2.5 = 41.5 is the value in the console.log 
+
+console.log((72 / w) * 15);
+72 / 32 = 2.25
+2.25 * 15 = 33.75 is the value in the console.log
+
+console.log((x % 10) * 15);
+16 % 10 = 6 because the remainder is 6
+x * 15 = 90 is the value in the console.log
+
+console.log(v - w + z * y);
+2 * 4 = 8
+64 - 32 = 32
+32 + 8 = 40 is the value in the console.log
 
 */
 
