@@ -10,3 +10,4 @@ console.log(movieArr[2]);
 
 // EXPECTED RESULT:
 // "movies" - this is the third word in the array created by splitting the sentence at the spaces between words
+
