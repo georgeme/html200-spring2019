@@ -25,7 +25,7 @@ console.log(greeting);
 // code for creating a single string with comma separated values
 let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
 
-const greetingList=greeting.join(',');
+const greetingList = greeting.join(',');
 
 console.log(greetingList);
 // end code
@@ -41,7 +41,7 @@ greeting.push('salve');
 
 greeting.splice(2, 1);
 
-const greetingList=greeting.join(',');
+const greetingList = greeting.join(',');
 
 console.log(greetingList);
 // end code
