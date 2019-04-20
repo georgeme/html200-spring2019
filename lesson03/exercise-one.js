@@ -37,3 +37,4 @@ const greetingList=greeting.join(',');
 
 console.log(greetingList);
 // end code
+
