@@ -19,7 +19,7 @@ greeting.splice(2, 1);
 console.log(greeting);
 // end code
 // EXPECTED RESULT:
-// ["hello", "bonjour", "hola", "hej", "ciao"] - removed "hallo" which is the thirde item in the list of greetings
+// ["hello", "bonjour", "hola", "hej", "ciao"] - removed "hallo" which is the third item in the list of greetings
 
 
 // code for creating a single string with comma separated values
