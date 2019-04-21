@@ -1,50 +1,19 @@
 
-// code for adding an item to the end of the array
+// Declare the variables
 let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
-
+// Add an item to the end and console log the result
 greeting.push('salve');
-
 console.log(greeting);
-// end code
-// EXPECTED RESULT:
-// ["hello", "bonjour", "hallo", "hola", "hej", "ciao", "salve"] - added 'salve' at the end which is Latin for 'hello'
+// Expected Result: ["hello", "bonjour", "hallo", "hola", "hej", "ciao", "salve"] - original 6 items plus "salve" at the end
 
-
-
-// code for removing the third item
-let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
-
+// Remove the third item in the list and console log the result
 greeting.splice(2, 1);
-
 console.log(greeting);
-// end code
-// EXPECTED RESULT:
-// ["hello", "bonjour", "hola", "hej", "ciao"] - removed 'hallo' which is the third item in the list of greetings
+// Expected Results ["hello", "bonjour", "hola", "hej", "ciao", "salve"] - removed the third item in the list which was "hallo"
 
-
-// code for creating a single string with comma separated values
-let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
-
+// Create a single, comma-separated list and console log the result
 const greetingList = greeting.join(',');
-
 console.log(greetingList);
-// end code
-// EXPECTED RESULT:
-// "hello,bonjour,hallo,hola,hej,ciao" - created as one string with comma separated values
+// Expected Result: "hello,bonjour,hola,hej,ciao,salve" - which is a comma-separated string of the list with the item added at the end and the third item removed
 
-
-
-// code for doing ALL tasks in one result
-let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
-
-greeting.push('salve');
-
-greeting.splice(2, 1);
-
-const greetingList = greeting.join(',');
-
-console.log(greetingList);
-// end code
-// EXPECTED RESULT: 
-// "hello,bonjour,hola,hej,ciao,salve" - added 'salve' to the end of the strings of greetings, removed 'hallo' as the third item in the list, wrote them all as one comma separated string
 
