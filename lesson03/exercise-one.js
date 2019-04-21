@@ -1,6 +1,9 @@
 
 // Declare the variables
 let greeting = ['hello', 'bonjour', 'hallo', 'hola', 'hej', 'ciao'];
+console.log(greeting);
+// Expected Result: ["hello", "bonjour", "hallo", "hola", "hej", "ciao"] - simple listing of the items declared
+
 // Add an item to the end and console log the result
 greeting.push('salve');
 console.log(greeting);
@@ -15,5 +18,6 @@ console.log(greeting);
 const greetingList = greeting.join(',');
 console.log(greetingList);
 // Expected Result: "hello,bonjour,hola,hej,ciao,salve" - which is a comma-separated string of the list with the item added at the end and the third item removed
+
 
 
