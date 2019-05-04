@@ -4,7 +4,7 @@ let balance = 50000;
 
 function banking() {
     while(quit === false) {
-    let input = prompt("What transaction would you like?");
+    let input = prompt("What transaction would you like?").toLowerCase();
 
     if (input === 'q') {
     quit = true;
@@ -12,7 +12,7 @@ function banking() {
     result = balance;
     alert('$' + result.toFixed(2));
   } else if (input === 'd') {
-    let deposit = prompt('How much would you like to deposit?')
+    let deposit = prompt('How much would you like to deposit?').toLowerCase();
     result = Number(balance) + Number(deposit);
       if (deposit > 50000) {
         alert('You cannot deposit more than $50,000');
@@ -21,7 +21,7 @@ function banking() {
     balance = balance + Number(deposit);
     alert('$' + result.toFixed(2));
   } else if (input === 'w') {
-    let withdrawal = prompt("How much would you like to withdraw?");
+    let withdrawal = prompt("How much would you like to withdraw?").toLowerCase();
     result = Number(balance) - Number(withdrawal);
     balance = balance - Number(withdrawal);
       if (balance < 300) {
