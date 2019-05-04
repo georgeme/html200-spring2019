@@ -1,12 +1,9 @@
-// const b = 'balance';
-// const w = 'withdrawal';
-// const d = 'deposit';
-// const q = 'quit';
+
 let quit = false;
 let balance = 50000;
 
 function banking() {
-  while(quit === false) {
+    while(quit === false) {
     let input = prompt("What transaction would you like?");
 
     if (input === 'q') {
@@ -19,15 +16,18 @@ function banking() {
     result = Number(balance) + Number(deposit);
       if (deposit > 50000) {
         alert('You cannot deposit more than $50,000');
-        { break; }
+        { continue; }
       }
     balance = balance + Number(deposit);
     alert('$' + result.toFixed(2));
   } else if (input === 'w') {
-    let withdrawal = prompt("How much would you like to withdrawal?");
+    let withdrawal = prompt("How much would you like to withdraw?");
     result = Number(balance) - Number(withdrawal);
     balance = balance - Number(withdrawal);
-    alert('$' + balance.toFixed(2));
+      if (balance < 300) {
+        alert('Your balance will be less than $300. Do you wish to continue?');
+      }
+    alert('$' + result.toFixed(2));
   }
 
   }
