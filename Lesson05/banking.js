@@ -18,7 +18,7 @@ function banking() {
       break;
 
       case 'd':
-        let deposit = prompt('How much would you like to deposit?').toLowerCase();
+        let deposit = prompt('How much would you like to deposit?');
         result = Number(balance) + Number(deposit);
           if (deposit > 50000) {
             alert('You cannot deposit more than $50,000!');
@@ -29,7 +29,7 @@ function banking() {
         break;
 
       case 'w':
-        let withdrawal = prompt("How much would you like to withdraw?").toLowerCase();
+        let withdrawal = prompt("How much would you like to withdraw?");
         result = Number(balance) - Number(withdrawal);
         balance = balance - Number(withdrawal);
           if (balance < 300 && balance > 0) {
